@@ -2,7 +2,7 @@
 
 {% api-method method="get" host="https://www.even3.com.br" path="/api/v1/session/:id" %}
 {% api-method-summary %}
-Retorna as atividades do evento
+Retorna as atividades
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -114,7 +114,7 @@ Erro ao retornar a atividade.
 
 {% api-method method="get" host="https://www.even3.com.br" path="/api/v1/speaker/:id" %}
 {% api-method-summary %}
-Retorna os palestrantes do evento
+Retorna os palestrantes
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -160,6 +160,38 @@ Token de autenticação obtido nas configurações do evento
     }
   ]
 }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/session/getschedule" %}
+{% api-method-summary %}
+Retorna a programação por dia
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Retornar a programação para facilitar a criação de uma grade de programação
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="Authorization-Token" type="string" required=false %}
+Token de autenticação obtido nas configurações do evento
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
