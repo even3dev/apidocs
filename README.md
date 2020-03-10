@@ -24,5 +24,17 @@ Informação sobre os participantes do evento
 
 * Retorna os dados do seu evento
 
+[**Programação**](programacao.md)\*\*\*\*
+
+* Retornar as atividades
+* Retornar os palestrantes
+* Retornar o cronograma
+
+[**Submissão**](submissao.md)\*\*\*\*
+
+* Retornar as modalidades e áreas temáticas
+
+ 
+
 
 
