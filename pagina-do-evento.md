@@ -2,7 +2,7 @@
 
 {% api-method method="get" host="https://www.even3.com.br" path="/api/v1/hotsite/" %}
 {% api-method-summary %}
-Retornar área
+Retorna a lista de áreas cadastradas
 {% endapi-method-summary %}
 
 {% api-method-description %}
