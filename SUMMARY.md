@@ -7,4 +7,5 @@
 * [Programação](programacao.md)
 * [Submissão](submissao.md)
 * [Empresas](empresas.md)
+* [Página do evento](pagina-do-evento.md)
 

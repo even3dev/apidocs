@@ -13,7 +13,7 @@ Retorna as modalidades e áreas temáticas do evento
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authorization-Token" type="string" required=true %}
-Token de autenticação obtido nas configurações do evento.Re{
+Token de autenticação obtido nas configurações do evento.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
