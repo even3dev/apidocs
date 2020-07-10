@@ -4,7 +4,7 @@
 
 | Nome da propriedade | Tipo da propriedade | Descrição |
 | :--- | :--- | :--- |
-| checkin\_code | string | Número de inscrição do participante |
+| checkin\_code | string | Número de inscrição do participante em um evento |
 | checkin | int | Flag para credenciar ou não credenciar o participante |
 | checkin\_date | datetime | Data de credenciamento |
 
