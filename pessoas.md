@@ -144,6 +144,6 @@ Objeto `Atendee`
 ```
 
 {% hint style="info" %}
-**`id_ticket_price`**- É a entrada no qual o participante será inscrito, a lista de entradas e seus ids podem ser obtida no endpoint Evento 
+**`id_ticket_price`**- É a entrada no qual o participante será inscrito. A lista de entradas e seus ids podem ser obtidas no endpoint Evento 
 {% endhint %}
 
