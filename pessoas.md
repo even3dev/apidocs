@@ -36,6 +36,7 @@ Participante retornado com sucesso
         {
             "id_attendees": 9,
             "id_event": 1,
+            "checkin_code": 11,
             "name": "Renan José Guedes",
             "bagde_name": "Renan Guedes",
             "email": "renang@hotmail.com",
@@ -46,6 +47,7 @@ Participante retornado com sucesso
         {
             "id_attendees": 24,
             "id_event": 1,
+            "checkin_code": 25,
             "name": "Luciana Corrêa",
             "bagde_name": "Luciana Corrêa",
             "email": "luciana@gmail.com",
@@ -98,7 +100,7 @@ Inserir um participante
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="" type="string" required=true %}
+{% api-method-parameter name="Authorization-Token" type="string" required=true %}
 Token de autenticação obtido nas configurações do evento
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
