@@ -42,6 +42,7 @@ Participante retornado com sucesso
             "email": "renang@hotmail.com",
             "gender": "M",
             "photo": "https://graph.facebook.com/1569985586409400/picture?width=150&height=150",
+            "document": "000.000.000-00",
             "confirmed": false
         },
         {
@@ -53,6 +54,7 @@ Participante retornado com sucesso
             "email": "luciana@gmail.com",
             "gender": "F",
             "photo": " ",
+            "document": "000.000.000-00",
             "confirmed": false
         },
         {
@@ -63,6 +65,7 @@ Participante retornado com sucesso
             "email": "germana@globo.com",
             "gender": "F",
             "photo": " ",
+            "document": "123456789",
             "confirmed": false
         },
 ],
