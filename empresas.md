@@ -1,33 +1,19 @@
 # Empresas
 
-{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/customclient/events" %}
-{% api-method-summary %}
-Retorna lista de eventos da empresa
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/customclient/events" method="get" summary="Retorna lista de eventos da empresa" %}
+{% swagger-description %}
 Retorna a lista de eventos do plano empresarial. É necessário solicitar as informações de autenticação ao suporte
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Solicitar ao suporte
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Authorization-App" type="string" required=true %}
+{% swagger-parameter name="Authorization-App" type="string" required="true" in="header" %}
 Solicitar ao suporte
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Lista de eventos
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "data": [
@@ -35,15 +21,14 @@ Lista de eventos
       "id": 1
       "titulo": "Evento teste 1",
       "url": "urleventoTeste",
-      "token": "123456789"
-       }
+      "token": "123456789",
+      "start_date": "2014-04-13T00:00:00",
+      "start_time": "09:00",
+      "end_date": "2014-06-03T00:00:00",
+      "end_time": "18:00",
+     }
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
-
+{% endswagger-response %}
+{% endswagger %}
