@@ -18,14 +18,15 @@ Solicitar ao suporte
 {
   "data": [
     {
-      "id": 1
+      "id": 1,
       "titulo": "Evento teste 1",
       "url": "urleventoTeste",
       "token": "123456789",
-      "start_date": "2014-04-13T00:00:00",
-      "start_time": "09:00",
-      "end_date": "2014-06-03T00:00:00",
-      "end_time": "18:00",
+      "email_organizador": "apiempresas@even3.com",
+      "start_date": "2024-01-01",
+      "start_time": "19:00",
+      "end_date": "2024-02-01",
+      "end_time": "21:30"
      }
   ]
 }
