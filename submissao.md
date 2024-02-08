@@ -1,29 +1,15 @@
-# Submissão
+# 📜 Submissão
 
-{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/submission/" %}
-{% api-method-summary %}
-Retorna as modalidades e áreas temáticas de submissão
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/submission/" method="get" summary="Retorna as modalidades e áreas temáticas de submissão" %}
+{% swagger-description %}
 Retorna as modalidades e áreas temáticas do evento
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Token de autenticação obtido nas configurações do evento.Re{
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
   "submission_type": {
     "data": [
@@ -75,22 +61,13 @@ Token de autenticação obtido nas configurações do evento.Re{
   "count": 2
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="" %}
 ```
 {
   "Message": "No HTTP resource was found that matches the request URI 'https://www.even3.com.br/api/v1/submission/29631'."
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
-
+{% endswagger-response %}
+{% endswagger %}

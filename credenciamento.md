@@ -1,80 +1,41 @@
-# Credenciamento
+# ✅ Credenciamento
 
-{% api-method method="post" host="https://www.even3.com.br" path="/api/v1/checkin/attendees" %}
-{% api-method-summary %}
-Credenciamento dos participantes no evento
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/checkin/attendees" method="post" summary="Credenciamento dos participantes no evento" %}
+{% swagger-description %}
 Realiza credenciamento dos participantes no evento
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Token de autenticação obtido nas configurações do evento.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="attendees" type="array" required=true %}
-Lista de CheckinAttendees \(Ver Models\)
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter name="attendees" type="array" required="true" in="body" %}
+Lista de CheckinAttendees (Ver Models)
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Credenciamento realizado
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 "OK"
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://www.even3.com.br" path="/api/v1/checkin/sessions" %}
-{% api-method-summary %}
-
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/checkin/sessions" method="post" summary="" %}
+{% swagger-description %}
 Realiza credenciamento dos participantes em atividades
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Token de autenticação obtido nas configurações do evento.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="sessions" type="array" required=true %}
-Lista de CheckinSessions \(Ver Models\)
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter name="sessions" type="array" required="true" in="body" %}
+Lista de CheckinSessions (Ver Models)
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Credenciamento realizado
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 "OK"
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
-
+{% endswagger-response %}
+{% endswagger %}
