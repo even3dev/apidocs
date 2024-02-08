@@ -4,7 +4,7 @@
 * [Autenticação](autenticacao.md)
 * [Pessoas](pessoas.md)
 * [Evento](evento.md)
-* [Pagamentos](evento-1.md)
+* [💰 Pagamentos](pagamentos.md)
 * [Programação](programacao.md)
 * [Submissão](submissao.md)
 * [Empresas](empresas.md)

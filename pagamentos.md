@@ -1,4 +1,4 @@
-# Pagamentos
+# 💰 Pagamentos
 
 {% swagger baseUrl="https://www.even3.com.br" path="/api/v1/payments" method="get" summary="Retornar dados de pagamentos do evento" %}
 {% swagger-description %}
