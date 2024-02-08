@@ -1,35 +1,19 @@
 # Pessoas
 
-{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/attendees/:id" %}
-{% api-method-summary %}
-Retornar participantes
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/attendees/:id" method="get" summary="Retornar participantes" %}
+{% swagger-description %}
 Esse método retorna um ou todos os participantes de um evento.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
+{% swagger-parameter name="id" type="string" in="path" %}
 ID do um participante específico
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Token de autenticação obtido nas configurações do evento.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Participante retornado com sucesso
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "data": [
@@ -73,65 +57,40 @@ Participante retornado com sucesso
 }
 
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="" %}
 ```javascript
 {
     "data": [],
     "count": 0
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://www.even3.com.br" path="/api/v1/attendees/create" %}
-{% api-method-summary %}
-Inserir um participante
-{% endapi-method-summary %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/attendees/create" method="post" summary="Inserir um participante" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Token de autenticação obtido nas configurações do evento
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="attendee" type="string" required=false %}
+{% swagger-parameter name="attendee" type="string" required="false" in="body" %}
 Objeto `Atendee`
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Attendee
 
-```text
+```
 {
   "name": "string",
   "bagde_name": "string",
@@ -147,6 +106,5 @@ Objeto `Atendee`
 ```
 
 {% hint style="info" %}
-**`id_ticket_price`**- É a entrada no qual o participante será inscrito. A lista de entradas e seus ids podem ser obtidas no endpoint Evento 
+**`id_ticket_price`**- É a entrada no qual o participante será inscrito. A lista de entradas e seus ids podem ser obtidas no endpoint Evento
 {% endhint %}
-

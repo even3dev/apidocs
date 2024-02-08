@@ -1,35 +1,19 @@
 # Programação
 
-{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/session/:id" %}
-{% api-method-summary %}
-Retorna as atividades
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/session/:id" method="get" summary="Retorna as atividades" %}
+{% swagger-description %}
 Retorne a lista de atividades do evento ou uma única atividade
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID de uma atividade específica \(opcional\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% swagger-parameter name="id" type="string" in="path" %}
+ID de uma atividade específica (opcional)
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Token de autenticação obtido nas configurações do evento.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Atividade retornada com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "data": [
@@ -88,13 +72,9 @@ Atividade retornada com sucesso.
   ]
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Erro ao retornar a atividade.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="" %}
 ```
 {
   "message": "Something bad happened :(",
@@ -107,41 +87,23 @@ Erro ao retornar a atividade.
   "count_erros": 1
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/speaker/:id" %}
-{% api-method-summary %}
-Retorna os palestrantes
-{% endapi-method-summary %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/speaker/:id" method="get" summary="Retorna o palestrante" %}
+{% swagger-description %}
+Retornar o palestrante
+{% endswagger-description %}
 
-{% api-method-description %}
-Retornar todos os pale
-{% endapi-method-description %}
+{% swagger-parameter name="" type="string" required="false" in="path" %}
+ID de um palestrantes específico (opcional)
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-ID de um palestrantes específico \(opcional\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
+{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
 Token de autenticação obtido nas configurações do evento
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "data": [
@@ -161,35 +123,19 @@ Token de autenticação obtido nas configurações do evento
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/session/getschedule" %}
-{% api-method-summary %}
-Retorna a programação por dia
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/session/getschedule" method="get" summary="Retorna a programação por dia" %}
+{% swagger-description %}
 Retornar a programação para facilitar a criação de uma grade de programação
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="Authorization-Token" type="string" required=false %}
+{% swagger-parameter name="Authorization-Token" type="string" required="false" in="path" %}
 Token de autenticação obtido nas configurações do evento
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "data": [
@@ -607,8 +553,5 @@ Token de autenticação obtido nas configurações do evento
   "count": 2
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}
