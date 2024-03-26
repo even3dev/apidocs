@@ -1,19 +1,25 @@
-# Pessoas
+# 🧑‍🤝‍🧑 Pessoas
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/attendees/:id" method="get" summary="Retornar participantes" %}
-{% swagger-description %}
+## Retornar participantes
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/attendees/:id`
+
 Esse método retorna um ou todos os participantes de um evento.
-{% endswagger-description %}
 
-{% swagger-parameter name="id" type="string" in="path" %}
-ID do um participante específico
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Token de autenticação obtido nas configurações do evento.
-{% endswagger-parameter %}
+| Name | Type   | Description                      |
+| ---- | ------ | -------------------------------- |
+| id   | string | ID do um participante específico |
 
-{% swagger-response status="200" description="" %}
+#### Headers
+
+| Name                                                  | Type   | Description                                               |
+| ----------------------------------------------------- | ------ | --------------------------------------------------------- |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação obtido nas configurações do evento. |
+
+{% tabs %}
+{% tab title="200 " %}
 ```javascript
 {
     "data": [
@@ -57,36 +63,41 @@ Token de autenticação obtido nas configurações do evento.
 }
 
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="" %}
+{% tab title="404 " %}
 ```javascript
 {
     "data": [],
     "count": 0
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/attendees/create" method="post" summary="Inserir um participante" %}
-{% swagger-description %}
+## Inserir um participante
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://www.even3.com.br/api/v1/attendees/create`
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Token de autenticação obtido nas configurações do evento
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter name="attendee" type="string" required="false" in="body" %}
-Objeto `Atendee`
-{% endswagger-parameter %}
+| Name                                                  | Type   | Description                                              |
+| ----------------------------------------------------- | ------ | -------------------------------------------------------- |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação obtido nas configurações do evento |
 
-{% swagger-response status="200" description="" %}
+#### Request Body
+
+| Name     | Type   | Description      |
+| -------- | ------ | ---------------- |
+| attendee | string | Objeto `Atendee` |
+
+{% tabs %}
+{% tab title="200 " %}
+```json
+"Data entered successfully."
 ```
-```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Attendee
 
