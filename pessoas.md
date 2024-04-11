@@ -8,9 +8,9 @@ Esse método retorna um ou todos os participantes de um evento.
 
 #### Path Parameters
 
-| Name | Type   | Description                      |
-| ---- | ------ | -------------------------------- |
-| id   | string | ID do um participante específico |
+| Name | Type   | Description      |
+| ---- | ------ | ---------------- |
+| id   | string | ID do seu evento |
 
 #### Headers
 
