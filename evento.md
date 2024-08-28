@@ -41,7 +41,7 @@ Este endpoint retorna todas as informações sobre o seu evento
             "tickets": [
                 {
                     "title": "Profissional",
-                    "subscribed_quantity_ticket": 4
+                    "registration_quantity": 4
                     "prices": [
                         {
                             "id_ticket": 2,
@@ -49,7 +49,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 370,
                             "start_date": "2014-01-09T00:00:00",
                             "due_date": "2014-01-10T00:00:00",
-                            "subscribed_quantity_ticket_price": 1
+                            "registration_quantity_price": 1
                         },
                         {
                             "id_ticket": 2,
@@ -57,7 +57,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 390,
                             "start_date": "2014-01-10T00:00:00",
                             "due_date": "2014-01-16T00:00:00",
-                            "subscribed_quantity_ticket_price": 1
+                            "registration_quantity_price": 1
                         },
                         {
                             "id_ticket": 2,
@@ -65,7 +65,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 400,
                             "start_date": "2014-03-01T00:00:00",
                             "due_date": "2014-03-01T00:00:00",
-                            "subscribed_quantity_ticket_price": 1
+                            "registration_quantity_price": 1
                         },
                         {
                             "id_ticket": 2,
@@ -73,13 +73,13 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 420,
                             "start_date": "2014-04-03T00:00:00",
                             "due_date": "2014-04-03T00:00:00",
-                            "subscribed_quantity_ticket_price": 1
+                            "registration_quantity_price": 1
                         }
                     ]
                 },
                 {
                     "title": "Estudante de Graduação",
-                    "subscribed_quantity_ticket": 1
+                    "registration_quantity": 1
                     "prices": [
                         {
                             "id_ticket": 3,
@@ -87,7 +87,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 160,
                             "start_date": "2013-12-15T00:00:00",
                             "due_date": "2013-12-16T00:00:00",
-                            "subscribed_quantity_ticket_price": 1
+                            "registration_quantity_price": 1
                         },
                         {
                             "id_ticket": 3,
@@ -95,7 +95,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 190,
                             "start_date": "2014-01-16T00:00:00",
                             "due_date": "2014-01-16T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         },
                         {
                             "id_ticket": 3,
@@ -103,7 +103,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 230,
                             "start_date": "2014-03-01T00:00:00",
                             "due_date": "2014-03-01T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         },
                         {
                             "id_ticket": 3,
@@ -111,13 +111,13 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 260,
                             "start_date": "2014-04-03T00:00:00",
                             "due_date": "2014-04-03T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         }
                     ]
                 },
                 {
                     "title": "Profissional (Autor)",
-                    "subscribed_quantity_ticket": 0
+                    "registration_quantity": 0
                     "prices": [
                         {
                             "id_ticket": 4,
@@ -125,7 +125,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 370,
                             "start_date": "2014-01-16T00:00:00",
                             "due_date": "2013-12-16T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         },
                         {
                             "id_ticket": 4,
@@ -133,7 +133,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 370,
                             "start_date": "2014-01-16T00:00:00",
                             "due_date": "2014-01-16T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         },
                         {
                             "id_ticket": 4,
@@ -141,7 +141,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 370,
                             "start_date": "2014-03-01T00:00:00",
                             "due_date": "2014-03-01T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         },
                         {
                             "id_ticket": 4,
@@ -149,13 +149,13 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 370,
                             "start_date": "2013-08-27T00:00:00",
                             "due_date": "2014-04-03T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         }
                     ]
                 },
                 {
                     "title": "Estudante de Graduação (Autor)",
-                    "subscribed_quantity_ticket": 2
+                    "registration_quantity": 2
                     "prices": [
                         {
                             "id_ticket": 5,
@@ -163,7 +163,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 160,
                             "start_date": "2014-01-12T00:00:00",
                             "due_date": "2013-12-16T00:00:00",
-                            "subscribed_quantity_ticket_price": 1
+                            "registration_quantity_price": 1
                         },
                         {
                             "id_ticket": 5,
@@ -171,7 +171,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 160,
                             "start_date": "2014-01-14T00:00:00",
                             "due_date": "2014-01-16T00:00:00",
-                            "subscribed_quantity_ticket_price": 1
+                            "registration_quantity_price": 1
                         },
                         {
                             "id_ticket": 5,
@@ -179,7 +179,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 160,
                             "start_date": "2014-01-03T00:00:00",
                             "due_date": "2014-03-01T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         },
                         {
                             "id_ticket": 5,
@@ -187,7 +187,7 @@ Este endpoint retorna todas as informações sobre o seu evento
                             "price": 160,
                             "start_date": "2014-04-03T00:00:00",
                             "due_date": "2014-04-03T00:00:00",
-                            "subscribed_quantity_ticket_price": 0
+                            "registration_quantity_price": 0
                         }
                     ]
                 }
