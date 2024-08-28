@@ -1,29 +1,21 @@
-# Evento
+# 💙 Evento
 
-{% api-method method="get" host="https://www.even3.com.br" path="/api/v1/event" %}
-{% api-method-summary %}
-Retornar dados do evento
-{% endapi-method-summary %}
 
-{% api-method-description %}
+
+## Retornar dados do evento
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/event`
+
 Este endpoint retorna todas as informações sobre o seu evento
-{% endapi-method-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization-Token" type="string" required=true %}
-Token de autenticação encontrado nas configurações do evento
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+#### Headers
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+| Name                                                  | Type   | Description                                                  |
+| ----------------------------------------------------- | ------ | ------------------------------------------------------------ |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação encontrado nas configurações do evento |
 
-{% endapi-method-response-example-description %}
-
+{% tabs %}
+{% tab title="200 " %}
 ```javascript
    {
     "data": [
@@ -49,117 +41,153 @@ Token de autenticação encontrado nas configurações do evento
             "tickets": [
                 {
                     "title": "Profissional",
+                    "subscribed_quantity_ticket": 4
                     "prices": [
                         {
                             "id_ticket": 2,
                             "id_ticket_price": 2,
                             "price": 370,
-                            "due_date": "2013-12-16T00:00:00"
+                            "start_date": "2014-01-09T00:00:00",
+                            "due_date": "2014-01-10T00:00:00",
+                            "subscribed_quantity_ticket_price": 1
                         },
                         {
                             "id_ticket": 2,
                             "id_ticket_price": 3,
                             "price": 390,
-                            "due_date": "2014-01-16T00:00:00"
+                            "start_date": "2014-01-10T00:00:00",
+                            "due_date": "2014-01-16T00:00:00",
+                            "subscribed_quantity_ticket_price": 1
                         },
                         {
                             "id_ticket": 2,
                             "id_ticket_price": 4,
                             "price": 400,
-                            "due_date": "2014-03-01T00:00:00"
+                            "start_date": "2014-03-01T00:00:00",
+                            "due_date": "2014-03-01T00:00:00",
+                            "subscribed_quantity_ticket_price": 1
                         },
                         {
                             "id_ticket": 2,
                             "id_ticket_price": 5,
                             "price": 420,
-                            "due_date": "2014-04-03T00:00:00"
+                            "start_date": "2014-04-03T00:00:00",
+                            "due_date": "2014-04-03T00:00:00",
+                            "subscribed_quantity_ticket_price": 1
                         }
                     ]
                 },
                 {
                     "title": "Estudante de Graduação",
+                    "subscribed_quantity_ticket": 1
                     "prices": [
                         {
                             "id_ticket": 3,
                             "id_ticket_price": 6,
                             "price": 160,
-                            "due_date": "2013-12-16T00:00:00"
+                            "start_date": "2013-12-15T00:00:00",
+                            "due_date": "2013-12-16T00:00:00",
+                            "subscribed_quantity_ticket_price": 1
                         },
                         {
                             "id_ticket": 3,
                             "id_ticket_price": 7,
                             "price": 190,
-                            "due_date": "2014-01-16T00:00:00"
+                            "start_date": "2014-01-16T00:00:00",
+                            "due_date": "2014-01-16T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         },
                         {
                             "id_ticket": 3,
                             "id_ticket_price": 8,
                             "price": 230,
-                            "due_date": "2014-03-01T00:00:00"
+                            "start_date": "2014-03-01T00:00:00",
+                            "due_date": "2014-03-01T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         },
                         {
                             "id_ticket": 3,
                             "id_ticket_price": 9,
                             "price": 260,
-                            "due_date": "2014-04-03T00:00:00"
+                            "start_date": "2014-04-03T00:00:00",
+                            "due_date": "2014-04-03T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         }
                     ]
                 },
                 {
                     "title": "Profissional (Autor)",
+                    "subscribed_quantity_ticket": 0
                     "prices": [
                         {
                             "id_ticket": 4,
                             "id_ticket_price": 11,
                             "price": 370,
-                            "due_date": "2013-12-16T00:00:00"
+                            "start_date": "2014-01-16T00:00:00",
+                            "due_date": "2013-12-16T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         },
                         {
                             "id_ticket": 4,
                             "id_ticket_price": 12,
                             "price": 370,
-                            "due_date": "2014-01-16T00:00:00"
+                            "start_date": "2014-01-16T00:00:00",
+                            "due_date": "2014-01-16T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         },
                         {
                             "id_ticket": 4,
                             "id_ticket_price": 13,
                             "price": 370,
-                            "due_date": "2014-03-01T00:00:00"
+                            "start_date": "2014-03-01T00:00:00",
+                            "due_date": "2014-03-01T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         },
                         {
                             "id_ticket": 4,
                             "id_ticket_price": 10,
                             "price": 370,
-                            "due_date": "2014-04-03T00:00:00"
+                            "start_date": "2013-08-27T00:00:00",
+                            "due_date": "2014-04-03T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         }
                     ]
                 },
                 {
                     "title": "Estudante de Graduação (Autor)",
+                    "subscribed_quantity_ticket": 2
                     "prices": [
                         {
                             "id_ticket": 5,
                             "id_ticket_price": 14,
                             "price": 160,
-                            "due_date": "2013-12-16T00:00:00"
+                            "start_date": "2014-01-12T00:00:00",
+                            "due_date": "2013-12-16T00:00:00",
+                            "subscribed_quantity_ticket_price": 1
                         },
                         {
                             "id_ticket": 5,
                             "id_ticket_price": 15,
                             "price": 160,
-                            "due_date": "2014-01-16T00:00:00"
+                            "start_date": "2014-01-14T00:00:00",
+                            "due_date": "2014-01-16T00:00:00",
+                            "subscribed_quantity_ticket_price": 1
                         },
                         {
                             "id_ticket": 5,
                             "id_ticket_price": 16,
                             "price": 160,
-                            "due_date": "2014-03-01T00:00:00"
+                            "start_date": "2014-01-03T00:00:00",
+                            "due_date": "2014-03-01T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         },
                         {
                             "id_ticket": 5,
                             "id_ticket_price": 17,
                             "price": 160,
-                            "due_date": "2014-04-03T00:00:00"
+                            "start_date": "2014-04-03T00:00:00",
+                            "due_date": "2014-04-03T00:00:00",
+                            "subscribed_quantity_ticket_price": 0
                         }
                     ]
                 }
@@ -169,13 +197,9 @@ Token de autenticação encontrado nas configurações do evento
     "count": 1
 }
 ```
-{% endapi-method-response-example %}
+{% endtab %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Não foi possível encontrar os dados do evento
-{% endapi-method-response-example-description %}
-
+{% tab title="404 " %}
 ```javascript
 {   
     "message": "string",
@@ -188,10 +212,5 @@ Não foi possível encontrar os dados do evento
     "count_erros": 1
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
-
+{% endtab %}
+{% endtabs %}

@@ -33,7 +33,10 @@ Esse método retorna um ou todos os participantes de um evento.
             "gender": "M",
             "photo": "https://graph.facebook.com/1569985586409400/picture?width=150&height=150",
             "document": "000.000.000-00",
-            "confirmed": false
+            "confirmed": false,
+            "inscription_category": "",
+            "inscription_date": "",
+            "inscription_hour": ""
         },
         {
             "id_attendees": 24,
@@ -45,7 +48,10 @@ Esse método retorna um ou todos os participantes de um evento.
             "gender": "F",
             "photo": " ",
             "document": "000.000.000-00",
-            "confirmed": false
+            "confirmed": false,
+            "inscription_category": "",
+            "inscription_date": "",
+            "inscription_hour": ""
         },
         {
             "id_attendees": 25,
@@ -56,7 +62,10 @@ Esse método retorna um ou todos os participantes de um evento.
             "gender": "F",
             "photo": " ",
             "document": "123456789",
-            "confirmed": false
+            "confirmed": false,
+            "inscription_category": "Geral",
+            "inscription_date": "20/08/2022",
+            "inscription_hour": "11:50"
         },
 ],
     "count": 3
