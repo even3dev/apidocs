@@ -2,7 +2,7 @@
 
 ## Retornar participantes
 
-<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/attendees/:id`
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/attendees`
 
 Esse método retorna todos os participantes de um evento.
 
