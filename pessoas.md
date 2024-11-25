@@ -4,13 +4,7 @@
 
 <mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/attendees/:id`
 
-Esse método retorna um ou todos os participantes de um evento.
-
-#### Path Parameters
-
-| Name | Type   | Description      |
-| ---- | ------ | ---------------- |
-| id   | string | ID do seu evento |
+Esse método retorna todos os participantes de um evento.
 
 #### Headers
 
