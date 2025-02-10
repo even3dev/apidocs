@@ -1,19 +1,20 @@
-# Empresas
+# 🏦 Empresas
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/customclient/events" method="get" summary="Retorna lista de eventos da empresa" %}
-{% swagger-description %}
+## Retorna lista de eventos da empresa
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/customclient/events`
+
 Retorna a lista de eventos do plano empresarial. É necessário solicitar as informações de autenticação ao suporte
-{% endswagger-description %}
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Solicitar ao suporte
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter name="Authorization-App" type="string" required="true" in="header" %}
-Solicitar ao suporte
-{% endswagger-parameter %}
+| Name                                                  | Type   | Description          |
+| ----------------------------------------------------- | ------ | -------------------- |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Solicitar ao suporte |
+| Authorization-App<mark style="color:red;">\*</mark>   | string | Solicitar ao suporte |
 
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
   "data": [
@@ -26,10 +27,14 @@ Solicitar ao suporte
       "start_date": "2024-01-01",
       "start_time": "19:00",
       "end_date": "2024-02-01",
-      "end_time": "21:30"
+      "end_time": "21:30",
+      "local": "Centro de Convenções de Pernambuco",
+      "city":"Recife",
+      "state":"Pernambuco",
+      "country":"Brasil"
      }
   ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
