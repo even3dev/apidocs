@@ -8,6 +8,6 @@ Para obter a chave de acesso é preciso logar no seu evento na plataforma Even3,
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>EXEMPLO</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>EXEMPLO</p></figcaption></figure>
