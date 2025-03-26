@@ -1,19 +1,25 @@
-# Programação
+# 🗓️ Programação
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/session/:id" method="get" summary="Retorna as atividades" %}
-{% swagger-description %}
+## Retorna as atividades
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/session/:id`
+
 Retorne a lista de atividades do evento ou uma única atividade
-{% endswagger-description %}
 
-{% swagger-parameter name="id" type="string" in="path" %}
-ID de uma atividade específica (opcional)
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Token de autenticação obtido nas configurações do evento.
-{% endswagger-parameter %}
+| Name | Type   | Description                               |
+| ---- | ------ | ----------------------------------------- |
+| id   | string | ID de uma atividade específica (opcional) |
 
-{% swagger-response status="200" description="" %}
+#### Headers
+
+| Name                                                  | Type   | Description                                               |
+| ----------------------------------------------------- | ------ | --------------------------------------------------------- |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação obtido nas configurações do evento. |
+
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
   "data": [
@@ -72,9 +78,9 @@ Token de autenticação obtido nas configurações do evento.
   ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="" %}
+{% tab title="404 " %}
 ```
 {
   "message": "Something bad happened :(",
@@ -87,23 +93,29 @@ Token de autenticação obtido nas configurações do evento.
   "count_erros": 1
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/speaker/:id" method="get" summary="Retorna o palestrante" %}
-{% swagger-description %}
+## Retorna o palestrante
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/speaker/:id`
+
 Retornar o palestrante
-{% endswagger-description %}
 
-{% swagger-parameter name="" type="string" required="false" in="path" %}
-ID de um palestrantes específico (opcional)
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Token de autenticação obtido nas configurações do evento
-{% endswagger-parameter %}
+| Name | Type   | Description                                 |
+| ---- | ------ | ------------------------------------------- |
+|      | string | ID de um palestrantes específico (opcional) |
 
-{% swagger-response status="200" description="" %}
+#### Headers
+
+| Name                                                  | Type   | Description                                              |
+| ----------------------------------------------------- | ------ | -------------------------------------------------------- |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação obtido nas configurações do evento |
+
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
   "data": [
@@ -123,19 +135,23 @@ Token de autenticação obtido nas configurações do evento
   ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/session/getschedule" method="get" summary="Retorna a programação por dia" %}
-{% swagger-description %}
+## Retorna a programação por dia
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/session/getschedule`
+
 Retornar a programação para facilitar a criação de uma grade de programação
-{% endswagger-description %}
 
-{% swagger-parameter name="Authorization-Token" type="string" required="false" in="path" %}
-Token de autenticação obtido nas configurações do evento
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-response status="200" description="" %}
+| Name                | Type   | Description                                              |
+| ------------------- | ------ | -------------------------------------------------------- |
+| Authorization-Token | string | Token de autenticação obtido nas configurações do evento |
+
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
   "data": [
@@ -553,5 +569,5 @@ Token de autenticação obtido nas configurações do evento
   "count": 2
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}

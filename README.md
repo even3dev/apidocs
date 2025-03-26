@@ -1,4 +1,4 @@
-# Introdução
+# 📄 Introdução
 
 Bem-vindo à API pública da Even3! Através dela é possível obter informações relacionadas aos eventos criados por você, como dados do seu evento e informações sobre as pessoas cadastradas.
 
