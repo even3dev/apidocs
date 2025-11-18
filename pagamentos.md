@@ -1,15 +1,19 @@
 # 💰 Pagamentos
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/payments" method="get" summary="Retornar dados de pagamentos do evento" %}
-{% swagger-description %}
+## Retornar dados de pagamentos do evento
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/payments`
+
 Este endpoint retorna todas as informações dos pagamentos do seu evento
-{% endswagger-description %}
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Token de autenticação encontrado nas configurações do evento
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200" description="" %}
+| Name                                                  | Type   | Description                                                  |
+| ----------------------------------------------------- | ------ | ------------------------------------------------------------ |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação encontrado nas configurações do evento |
+
+{% tabs %}
+{% tab title="200 " %}
 ```javascript
 {
     "data": [
@@ -19,6 +23,7 @@ Token de autenticação encontrado nas configurações do evento
             "reference_payment": "0101010101",
             "buyer": "Empresa Geral",
             "email_buyer": "empresageral@teste.com.br",
+            "country_buyer": "Brazil",
             "document_buyer": "00000000000",
             "description_payment": "1 ingresso(s);",
             "date_payment": "28/11/2023",
@@ -35,9 +40,9 @@ Token de autenticação encontrado nas configurações do evento
     "count": 1
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="" %}
+{% tab title="404 " %}
 ```json
 {   
     "message": "string",
@@ -50,25 +55,31 @@ Token de autenticação encontrado nas configurações do evento
     "count_erros": 1
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 
 
-{% swagger method="get" path="/api/v1/payments/details" baseUrl="https://www.even3.com.br" summary="Retornar detalhes de um pagamento" %}
-{% swagger-description %}
+## Retornar detalhes de um pagamento
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/payments/details`
+
 Este endpoint retorna todas as informações de um pagamento do evento
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization-Token" type="string" required="true" %}
-Token de autenticação encontrado nas configurações do evento
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="reference" type="string" required="true" %}
-12345678
-{% endswagger-parameter %}
+| Name                                                  | Type   | Description                                                  |
+| ----------------------------------------------------- | ------ | ------------------------------------------------------------ |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação encontrado nas configurações do evento |
 
-{% swagger-response status="200: OK" description="" %}
+#### Request Body
+
+| Name                                        | Type   | Description |
+| ------------------------------------------- | ------ | ----------- |
+| reference<mark style="color:red;">\*</mark> | string | 12345678    |
+
+{% tabs %}
+{% tab title="200: OK " %}
 
 
 ```json
@@ -90,9 +101,9 @@ Token de autenticação encontrado nas configurações do evento
     "count": 1
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404: Not Found" description="" %}
+{% tab title="404: Not Found " %}
 ```json
 {   
     "message": "string",
@@ -105,5 +116,5 @@ Token de autenticação encontrado nas configurações do evento
     "count_erros": 1
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
