@@ -31,7 +31,8 @@ Retorna a lista de eventos do plano empresarial. É necessário solicitar as inf
       "local": "Centro de Convenções de Pernambuco",
       "city":"Recife",
       "state":"Pernambuco",
-      "country":"Brasil"
+      "country":"Brasil",
+      "public": true
      }
   ]
 }
