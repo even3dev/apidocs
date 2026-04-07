@@ -10,5 +10,6 @@
 * [🏦 Empresas](empresas.md)
 * [💻 Página do evento](pagina-do-evento.md)
 * [✅ Credenciamento](credenciamento.md)
+* [📃 Certificados](evento-1.md)
 * [🦴 Models](models.md)
 * [API FGV](api-fgv.md)

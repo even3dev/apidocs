@@ -1,16 +1,20 @@
 # 📜 Submissão
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/submission/" method="get" summary="Retorna as modalidades e áreas temáticas de submissão" %}
-{% swagger-description %}
+## Retorna as modalidades e áreas temáticas de submissão
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/submission/`
+
 Retorna as modalidades e áreas temáticas do evento
-{% endswagger-description %}
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Token de autenticação obtido nas configurações do evento.Re{
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200" description="" %}
-```
+| Name                                                  | Type   | Description                                                  |
+| ----------------------------------------------------- | ------ | ------------------------------------------------------------ |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação obtido nas configurações do evento.Re{ |
+
+{% tabs %}
+{% tab title="200 " %}
+```javascript
   "submission_type": {
     "data": [
       {
@@ -61,13 +65,65 @@ Token de autenticação obtido nas configurações do evento.Re{
   "count": 2
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="" %}
-```
+{% tab title="404 " %}
+```javascript
 {
   "Message": "No HTTP resource was found that matches the request URI 'https://www.even3.com.br/api/v1/submission/29631'."
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
+
+## Retorna detalhes das submissões e apresentações de trabalho do seu evento
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/submission/list`
+
+Retorna os detalhes das submissões e apresentações de trabalho do evento
+
+#### Headers
+
+| Name                                                  | Type   | Description                                                  |
+| ----------------------------------------------------- | ------ | ------------------------------------------------------------ |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação obtido nas configurações do evento.Re{ |
+
+{% tabs %}
+{% tab title="200 " %}
+```javascript
+{
+    "submission": {
+        "data": [
+            {
+                "id_event": 1234,
+                "id_submission": 567,
+                "title": "Teste Submissão",
+                "status": "Aprovado",
+                "id_submission_type": 123,
+                "submission_type": "Resumo",
+                "topic_area": "Exemplo de Área Temática",
+                "id_topic_area": 456,
+                "abstract": "Teste abstract",
+                "date": "2026-05-16T10:00:00",
+                "start_time": "10:02",
+                "end_time": "10:04",
+                "location": null,
+                "author": [
+                    {
+                        "id_event": 1234,
+                        "id_submission": 567,
+                        "name": "João Pedro",
+                        "email": "joao@gmail.com",
+                        "is_presenter": false,
+                        "author_order": 1
+                    }
+                ]
+            }
+        ],
+        "count": 1
+    },
+    "count": 1
+}
+```
+{% endtab %}
+{% endtabs %}
