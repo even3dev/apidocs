@@ -110,7 +110,7 @@ Esse método retorna todos os participantes de um evento.
 
 ### Attendee
 
-```
+```javascript
 {
   "name": "string",
   "bagde_name": "string",

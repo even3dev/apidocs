@@ -43,7 +43,7 @@ Este endpoint retorna todas as informações dos pagamentos do seu evento
 {% endtab %}
 
 {% tab title="404 " %}
-```json
+```javascript
 {   
     "message": "string",
     "erros": [
@@ -82,7 +82,7 @@ Este endpoint retorna todas as informações de um pagamento do evento
 {% tab title="200: OK " %}
 
 
-```json
+```javascript
 {
     "data": [
         {
@@ -104,7 +104,7 @@ Este endpoint retorna todas as informações de um pagamento do evento
 {% endtab %}
 
 {% tab title="404: Not Found " %}
-```json
+```javascript
 {   
     "message": "string",
     "erros": [

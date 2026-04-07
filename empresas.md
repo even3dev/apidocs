@@ -15,7 +15,7 @@ Retorna a lista de eventos do plano empresarial. É necessário solicitar as inf
 
 {% tabs %}
 {% tab title="200 " %}
-```
+```javascript
 {
   "data": [
     {

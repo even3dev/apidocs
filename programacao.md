@@ -20,7 +20,7 @@ Retorne a lista de atividades do evento ou uma única atividade
 
 {% tabs %}
 {% tab title="200 " %}
-```
+```javascript
 {
   "data": [
     {
@@ -81,7 +81,7 @@ Retorne a lista de atividades do evento ou uma única atividade
 {% endtab %}
 
 {% tab title="404 " %}
-```
+```javascript
 {
   "message": "Something bad happened :(",
   "erros": [
@@ -116,7 +116,7 @@ Retornar o palestrante
 
 {% tabs %}
 {% tab title="200 " %}
-```
+```javascript
 {
   "data": [
     {
@@ -152,7 +152,7 @@ Retornar a programação para facilitar a criação de uma grade de programaçã
 
 {% tabs %}
 {% tab title="200 " %}
-```
+```javascript
 {
   "data": [
     {

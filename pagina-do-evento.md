@@ -1,16 +1,20 @@
 # 💻 Página do evento
 
-{% swagger baseUrl="https://www.even3.com.br" path="/api/v1/hotsite/" method="get" summary="Retorna a lista de áreas cadastradas" %}
-{% swagger-description %}
+## Retorna a lista de áreas cadastradas
+
+<mark style="color:blue;">`GET`</mark> `https://www.even3.com.br/api/v1/hotsite/`
+
 Retorna as áreas cadastradas na página do evento
-{% endswagger-description %}
 
-{% swagger-parameter name="Authorization-Token" type="string" required="true" in="header" %}
-Token de autenticação obtido nas configurações do evento.
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200" description="" %}
-```
+| Name                                                  | Type   | Description                                               |
+| ----------------------------------------------------- | ------ | --------------------------------------------------------- |
+| Authorization-Token<mark style="color:red;">\*</mark> | string | Token de autenticação obtido nas configurações do evento. |
+
+{% tabs %}
+{% tab title="200 " %}
+```javascript
 {
   "capa": null,
   "areasSite": [
@@ -88,5 +92,5 @@ Token de autenticação obtido nas configurações do evento.
   ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
