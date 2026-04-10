@@ -32,7 +32,15 @@ Retorna a lista de eventos do plano empresarial. É necessário solicitar as inf
       "city":"Recife",
       "state":"Pernambuco",
       "country":"Brasil",
-      "public": true
+      "publicated": true,
+      "privacy": {
+        "data": [
+          {
+            "id": 2,
+            "type": "Privado - com link de acessso"
+          }
+        ]
+      }
      }
   ]
 }
