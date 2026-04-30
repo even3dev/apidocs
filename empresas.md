@@ -33,14 +33,12 @@ Retorna a lista de eventos do plano empresarial. É necessário solicitar as inf
       "state":"Pernambuco",
       "country":"Brasil",
       "publicated": true,
-      "privacy": {
-        "data": [
+      "privacy": [
           {
             "id": 2,
             "type": "Privado - com link de acessso"
           }
-        ]
-      }
+      ]
      }
   ]
 }
